@@ -41,29 +41,29 @@ const cardModifyClass = computed(() => {
 });
 </script>
 
-<style>
+<style lang="scss" scoped>
 .todo-card {
   display: flex;
   align-items: center;
   gap: 6px;
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: var(--default-b-r);
 }
 .todo-card--bg-orange {
-  background: linear-gradient(#ff7514, #ff5612);
+  background: var(--todo-card--bg-orange);
 }
 .todo-card--bg-violet {
-  background: linear-gradient(#600cff, #9900fa);
+  background: var(--todo-card--bg-violet);
 }
 .todo-card--bg-blue {
-  background: linear-gradient(#149dff, #127cff);
+  background: var(--todo-card--bg-blue);
 }
 .todo-card--bg-pink {
-  background: linear-gradient(#ff0cec, #fa008a);
+  background: var(--todo-card--bg-pink);
 }
 .todo-card__input--checked {
   text-decoration: line-through;
-  color: grey;
+  color: var(--todo-card-color-checked);
 }
 .todo-card__button {
   margin-left: auto;
@@ -75,6 +75,6 @@ const cardModifyClass = computed(() => {
 .todo-card__button:focus {
   background: rgb(0, 0, 0, 0.1);
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: var(--default-b-r);
 }
 </style>

@@ -42,21 +42,22 @@ const addNewTodo = (newTodo) => {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .page__title {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: var(--default-mr-b);
   font-size: 1em;
 }
 .page__add-todo {
-  margin-bottom: 24px;
+  margin-bottom: var(--default-mr-b);
 }
 .page__cards-list {
-  margin-bottom: 24px;
+  margin-bottom: var(--default-mr-b);
   list-style: none;
-}
-.page__cards-list-item:not(:last-child) {
-  margin-bottom: 6px;
+
+  .page__cards-list-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
 }
 .page__message {
   text-align: center;
